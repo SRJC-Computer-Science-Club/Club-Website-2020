@@ -1,0 +1,20 @@
+.nav_menu {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	list-styles: none;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.nav_link {
+	text-decoration: none;
+	color: #8d1515;
+}
+
+.nav_link:hover {
+	color: #7b7b7b;
+}
+
+.nav_link:active {
+	color: #222678;
+}
