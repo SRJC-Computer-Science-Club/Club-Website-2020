@@ -12,6 +12,7 @@
 		<script src="https://kit.fontawesome.com/d8a4c98c21.js" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/ceb45c49da.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
@@ -43,154 +44,443 @@
 					<div class="menu-toggle"><i class="fas fa-bars" aria-hidden="true"></i></div>
 			</header>
 			
-			<!-- credit to https://www.w3schools.com/howto/howto_js_image_grid.asp -->
-			<!-- project-list -->
-			<style>
-				.header {
-				text-align: center;
-				padding: 32px;
-				}
 
-				.row {
-				display: -ms-flexbox; /* IE 10 */
-				display: flex;
-				-ms-flex-wrap: wrap; /* IE 10 */
-				flex-wrap: wrap;
-				padding: 0 4px;
-				}
-
-				/* Create two equal columns that sits next to each other */
-				.column {
-				-ms-flex: 50%; /* IE 10 */
-				flex: 50%;
-				padding: 0 4px;
-				}
-
-				.column img {
-				margin-top: 8px;
-				vertical-align: middle;
-				}
-
-				/* Style the buttons */
-				.btn {
-				border: none;
-				outline: none;
-				padding: 10px 16px;
-				background-color: #f1f1f1;
-				cursor: pointer;
-				font-size: 18px;
-				}
-
-				.btn:hover {
-				background-color: #ddd;
-				}
-
-				.btn.active {
-				background-color: #666;
-				color: white;
-				}
-				
-				/* .check {
-					box-sizing: border-box;
-				} */
-			</style>
-			
-			<div class="head-layout container">
-				<div class="header" id="myHeader">
-					<h1>Projects</h1>
-					<p>Click on the buttons to change the grid view.</p>
-					<button class="btn" onclick="one()">1</button>
-					<button class="btn active" onclick="two()">2</button>
-					<button class="btn" onclick="four()">4</button>
+			<div class="container head-layout">
+					<h1>	Projects</h1>
+					<p>Check out the projects!</p>
 				</div>
-
-				<!-- Photo Grid -->
-					<div class="row"> 
-						<div class="column">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
+			<div>
+				<div class="container">
+					<div class="grid-row">
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://srjc-cs-website.herokuapp.com/"></a>
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top rex-ray">
+							<span class="centered project-image-bg rex-ray-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">1st website</span>
+							<span class="item-category">2017</span>
+							<span class="item-excerpt"> </span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
 						</div>
-						<div class="column">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-						</div>  
-						<div class="column">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-						</div>
-						<div class="column">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
-							<img src="SRJC-Map.jpeg" style="width:100%">
 						</div>
 					</div>
-			</div>
-
-
-
-			<script>
-				// Get the elements with class="column"
-				var elements = document.getElementsByClassName("column");
-				
-				// Declare a loop variable
-				var i;
-				
-				// Full-width images
-				function one() {
-					for (i = 0; i < elements.length; i++) {
-					elements[i].style.msFlex = "100%";  // IE10
-					elements[i].style.flex = "100%";
-				  }
-				}
-				
-				// Two images side by side
-				function two() {
-				  for (i = 0; i < elements.length; i++) {
-					elements[i].style.msFlex = "50%";  // IE10
-					elements[i].style.flex = "50%";
-				  }
-				}
-				
-				// Four images side by side
-				function four() {
-				  for (i = 0; i < elements.length; i++) {
-					elements[i].style.msFlex = "25%";  // IE10
-					elements[i].style.flex = "25%";
-				  }
-				}
-				
-				// Add active class to the current button (highlight it)
-				var header = document.getElementById("myHeader");
-				var btns = header.getElementsByClassName("btn");
-				for (var i = 0; i < btns.length; i++) {
-				  btns[i].addEventListener("click", function() {
-					var current = document.getElementsByClassName("active");
-					current[0].className = current[0].className.replace(" active", "");
-					this.className += " active";
-				  });
-				}
-				</script>
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://github.com/Kyle1668/SRJC-CS-Club-Website" target="_blank"></a>	   
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top sputnik">
+							<span class="centered project-image-bg sputnik-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">2nd website</span>
+							<span class="item-category">2018</span>
+							<span class="item-excerpt"></span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://github.com/SRJC-Computer-Science-Club/CSC-Web2.0/" target="_blank"></a>
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top edgex">
+							<span class="centered project-image-bg edgex-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">3rd website</span>
+							<span class="item-category">Early 2019</span>
+							<span class="item-excerpt"></span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://www.openswitch.net/" target="_blank"></a>
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top openswitch">
+							<span class="centered project-image-bg openswitch-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">OpenSwitch</span>
+							<span class="item-category">Software Based Infrastructure</span>
+							<span class="item-excerpt">The OpenSwitch platform is an open source, Linux-based network operating sy...</span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://github.com/kubernetes/kubernetes/tree/master/examples/volumes/scaleio" target="_blank"></a>
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top scaleio">
+							<span class="centered project-image-bg scaleio-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">K8s + ScaleIO</span>
+							<span class="item-category">Infrastructure as Code</span>
+							<span class="item-excerpt">Configure Kubernetes resources to consume storage from volumes hosted on Sc...</span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://thecodeteam.com/projects/container-storage-interface/"></a>
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top csi">
+							<span class="centered project-image-bg csi-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">Container Storage Interface</span>
+							<span class="item-category">Software Based Infrastructure</span>
+							<span class="item-excerpt">A universal storage interface  allowing easy interoperability between conta...</span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://thecodeteam.com/projects/kubernetes/"></a>
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top kubernetes">
+							<span class="centered project-image-bg kubernetes-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">Kubernetes</span>
+							<span class="item-category">Software Based Infrastructure</span>
+							<span class="item-excerpt">An open-source system for automating deployment, scaling, and management of...</span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://grpc.io/" target="_blank"></a>
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top grpc">
+							<span class="centered project-image-bg grpc-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">GRPC</span>
+							<span class="item-category">Tools and Libraries</span>
+							<span class="item-excerpt">A high performance, open source, general-purpose RPC framework.</span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://thecodeteam.com/projects/envoy/"></a>
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top envoy">
+							<span class="centered project-image-bg envoy-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">Envoy</span>
+							<span class="item-category">Software Based Infrastructure</span>
+							<span class="item-excerpt">An open source edge and service proxy, from the developers at Lyft.</span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<a class="wrapping-link" href="https://thecodeteam.com/projects/istio/"></a>
+						<div class="grid-item-wrapper">
+						<div class="grid-item-container">
+							<div class="grid-image-top istio">
+							<span class="centered project-image-bg istio-image"></span>
+							</div>
+							<div class="grid-item-content">
+							<span class="item-title">Istio</span>
+							<span class="item-category">Software Based Infrastructure</span>
+							<span class="item-excerpt">Connect, secure, control, and observe services.</span>
+							<span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
 			
-
+			<style>
+				  /* .container {
+			  max-width: 1335px;
+			  margin: 0 auto;
+			} */
+			
+			.grid-row {
+			  display: flex;
+			  flex-flow: row wrap;
+			  justify-content: flex-start;
+			}
+			
+			.grid-item {
+			  height: 550px;
+			  flex-basis: 33.333%;
+			  -ms-flex: auto;
+			  width: 259px;
+			  position: relative;
+			  padding: 10px;
+			  box-sizing: border-box;
+			}
+			
+			.grid-row a {
+			  text-decoration: none;
+			}
+			
+			.wrapping-link {
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  bottom: 0;
+			  right: 0;
+			  z-index: 2;
+			  color: currentColor;
+			}
+			
+			.grid-item-wrapper {
+			  -webkit-box-sizing: initial;
+			  -moz-box-sizing: initial;
+			  box-sizing: initial;
+			  background: #ececec;
+			  margin: 0;
+			  height: 100%;
+			  width: 100%;
+			  overflow: hidden;
+			  -webkit-transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+			  transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+			  position: relative;
+			}
+			
+			.grid-item-container {
+			  height: 100%;
+			  width: 100%;
+			  position: relative;
+			}
+			
+			.grid-image-top {
+			  height: 45%;
+			  width: 120%;
+			  background-size: cover;
+			  position: relative;
+			  background-position: 50% 50%;
+			  left: -10.5%;
+			  top: -4.5%;
+			}
+			
+			.grid-image-top .centered {
+			  text-align: center;
+			  transform: translate(-50%, -50%);
+			  background-size: contain;
+			  background-repeat: no-repeat;
+			  position: absolute;
+			  top: 54.5%;
+			  left: 50%;
+			  width: 60%;
+			  height: 60%;
+			  background-position: center;
+			}
+			
+			.grid-image-top.rex-ray {
+			  background: -webkit-gradient(linear,left top, left bottom,from(#007DB8),to(#00447C));
+			  background: -webkit-linear-gradient(#007DB8,#00447C);
+			  background: -o-linear-gradient(#007DB8,#00447C);
+			  background: linear-gradient(#007DB8,#00447C);
+			}
+			
+			.rex-ray-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/Rex-Ray-icon-209x300.png);
+			}
+			
+			.grid-image-top.sputnik {
+			  background: -webkit-gradient(linear,left top, left bottom,from(#1AA9FB),to(#1785C4));
+			  background: -webkit-linear-gradient(#1AA9FB,#1785C4);
+			  background: -o-linear-gradient(#1AA9FB,#1785C4);
+			  background: linear-gradient(#1AA9FB,#1785C4);
+			}
+			
+			.sputnik-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/sputnik-1-300x257.png);
+			}
+			
+			.grid-image-top.edgex {
+			  background: -webkit-gradient(linear,left top, left bottom,from(#952f4c),to(#3e1a51));
+			  background: -webkit-linear-gradient(#952f4c,#3e1a51);
+			  background: -o-linear-gradient(#952f4c,#3e1a51);
+			  background: linear-gradient(#952f4c,#3e1a51);
+			}
+			
+			.edgex-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/edge-x-300x287.png);
+			}
+			
+			.grid-image-top.openswitch {
+		
+			  background: -webkit-linear-gradient(#2db89a,#00793d);
+			  background: -o-linear-gradient(#2db89a,#00793d);
+			  background: linear-gradient(#2db89a,#00793d);
+			}
+			
+			.openswitch-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/open-switch-300x207.png);
+			}
+			
+			.grid-image-top.scaleio {
+			  background: -webkit-linear-gradient(#2e96dd,#326de6);
+			  background: -o-linear-gradient(#2e96dd,#326de6);
+			  background: linear-gradient(#2e96dd,#326de6);
+			}
+			
+			.scaleio-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/K8s_ScaleIO_Color-white-thumb-221x300.png);
+			}
+			
+			.grid-image-top.csi {
+			  
+			  background: -webkit-linear-gradient(#464646,#000000);
+			  background: -o-linear-gradient(#464646,#000000);
+			  background: linear-gradient(#464646,#000000);
+			}
+			
+			.csi-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/csi-1-300x99.png);
+			}
+			
+			.grid-image-top.kubernetes {
+			  
+			  background: -webkit-linear-gradient(#09C1D1,#326DE6);
+			  background: -o-linear-gradient(#09C1D1,#326DE6);
+			  background: linear-gradient(#09C1D1,#326DE6);
+			}
+			
+			.kubernetes-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/kubernetes-300x293.png);
+			}
+			
+			.grid-image-top.grpc {
+			  
+			  background: -webkit-linear-gradient(#0CC1C8,#2E838C);
+			  background: -o-linear-gradient(#0CC1C8,#2E838C);
+			  background: linear-gradient(#0CC1C8,#2E838C);
+			}
+			
+			.grpc-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/grpc-300x105.png);
+			}
+			
+			.grid-image-top.envoy {
+			  
+			  background: -webkit-linear-gradient(#290B54,#130229);
+			  background: -o-linear-gradient(#290B54,#130229);
+			  background: linear-gradient(#290B54,#130229);
+			}
+			
+			.envoy-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/envoy_logo-5028052-300x91.png);
+			}
+			
+			.grid-image-top.istio {
+			  
+			  background: -webkit-linear-gradient(#4A73C0,#466BB0);
+			  background: -o-linear-gradient(#4A73C0,#466BB0);
+			  background: linear-gradient(#4A73C0,#466BB0);
+			}
+			
+			.istio-image {
+			  background-image: url(https://thecodeteam.com/wp-content/uploads/2017/08/istio-203x300.png);
+			}
+			
+			.grid-item-content {
+			  padding: 0 20px 20px 20px;
+			}
+			
+			.item-title {
+			  font-size: 24px;
+			  line-height: 26px;
+			  font-weight: 700;
+			  margin-bottom: 18px;
+			  display: block;
+			}
+			
+			.item-category {
+			  text-transform: uppercase;
+			  display: block;
+			  margin-bottom: 20px;
+			  font-size: 14px;
+			}
+			
+			.item-excerpt {
+			  margin-bottom: 20px;
+			  display: block;
+			  font-size: 14px;
+			}
+			
+			.more-info {
+			  position: absolute;
+			  bottom: 0;
+			  margin-bottom: 25px;
+			  padding-left: 0;
+			  transition-duration: .5s;
+			  font-size: 12px;
+			  display: flex;
+			}
+			
+			.more-info i {
+			  padding-left: 5px;
+			  transition-duration: .5s;
+			}
+			
+			.grid-item:hover .more-info i {
+			  padding-left: 20px;
+			  transition-duration: .5s;
+			}
+			
+			.more-info i::before {
+			  font-size: 16px;
+			}
+			
+			.grid-item:hover .grid-item-wrapper {
+			  padding: 2% 2%;
+			  margin: -2% -2%;
+			}
+			
+			@media(max-width: 1333px) {
+			  .grid-item {
+				flex-basis: 33.33%;
+			  }
+			}
+			
+			@media(max-width: 1073px) {
+			   .grid-item {
+				flex-basis: 33.33%;
+			  }
+			}
+			
+			@media(max-width: 815px) {
+			  .grid-item {
+				flex-basis: 50%;
+			  }
+			}
+			
+			@media(max-width: 555px) {
+			  .grid-item {
+				flex-basis: 100%;
+			  }
+			}
+			  </style>
 
 			<footer class="footer-distributed">zz
  
