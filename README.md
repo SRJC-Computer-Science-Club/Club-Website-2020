@@ -5,8 +5,8 @@ The official website for the SRJC Computer Science Club
  
  ---
 
-### How to Update meeting times
-#### Step
+## How to Update meeting times
+### Steps
 ---
 1) Visit repository [here](https://github.com/SRJC-Computer-Science-Club/Club-Website-2020)
 
@@ -45,18 +45,21 @@ Click: Commit changes
 https://srjc-computer-science-club.github.io/Club-Website-2020/
 ```
 ![](https://i.imgur.com/qhUBYo6.png)
+### Success!
 ```
-### Success! you now can give your self a nice pat on the back!:)
-
-Note: the changes sometimes will not populate emiditly, 
+ you now can give your self a nice pat on the back!:)
+```
+#### Note: 
+```
+the changes sometimes will not populate emiditly, 
 
 it take time for github to push the changes to the website.
 ```
 ### Issue:
 ```
-sometimes if the page is still not changing after a few minutes,
+if the page is still not changing after a few minutes,
 
-sometimes the browser caching will interfere with your browser showing the page updates. 
+the browser's caching sometimes will interfere with your browser showing the page updates. 
 ```
 ### Solution:
 ```
