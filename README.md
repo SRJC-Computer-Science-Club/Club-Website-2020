@@ -7,10 +7,10 @@ The official website for the SRJC Computer Science Club
 
 ### How to Update meeting times
 #### Step
-0) Visit repository [here](https://github.com/SRJC-Computer-Science-Club/Club-Website-2020)
-1) Click sign in on github
 ---
-2)Login to github
+1) Visit repository [here](https://github.com/SRJC-Computer-Science-Club/Club-Website-2020)
+
+2) Login to github
 ```
 Note: if you dont have edit permisions to the website
 please contact the current club president at srjc.computer.science.club@gmail.com
@@ -20,9 +20,12 @@ located in google drive "SRJC CS Club/Hidden/Club accounts and passwords"
 ```
 ![](https://i.imgur.com/wjOUE16.jpg)
 ---
-3)![](https://i.imgur.com/H2ZTzo0.jpg)
+3) Click sign in on github
+
+![](https://i.imgur.com/H2ZTzo0.jpg)
 ---
-4) click on index.html
+4) Click on index.html
+
 ![](https://i.imgur.com/s2hljGq.jpg)
 ---
 5) Once index.html click the edit icon in the top right hand side
@@ -42,13 +45,34 @@ Click: Commit changes
 https://srjc-computer-science-club.github.io/Club-Website-2020/
 ```
 ![](https://i.imgur.com/qhUBYo6.png)
-Success! you now can give your self a nice pat on the back!:)
-Note: the changes sometimes will not populate emiditly, it take time for github to push the changes to the website.
-Also if the page is still not changing after a few minutes, sometimes the browser cache will interfere with your browser making a nice and clean new request. to solve this (chrome) go into developer tools: right click on the page, or cmd + shift +i (mac) or ctrl + shift + i (windows). 
-![](https://i.imgur.com/Ura5DsC.png)
-![](https://i.imgur.com/OUInJ4Z.png)
-Hard reload the webpage : right click on the reload button at the top of the browser or type (mac) cmd + shift + r or (windows) ctrl + shift + r
+```
+### Success! you now can give your self a nice pat on the back!:)
 
+Note: the changes sometimes will not populate emiditly, 
+
+it take time for github to push the changes to the website.
+```
+### Issue:
+```
+sometimes if the page is still not changing after a few minutes,
+
+sometimes the browser caching will interfere with your browser showing the page updates. 
+```
+### Solution:
+```
+in chome open the developer tools:
+
+right click on the page, 
+or cmd + shift +i (mac) 
+or ctrl + shift + i (windows). 
+Hard reload the webpage : 
+right click on the reload button at the top of the browser or type (mac) cmd + shift + r or (windows) ctrl + shift + r
+```
+![](https://i.imgur.com/Ura5DsC.png)
+
+![](https://i.imgur.com/OUInJ4Z.png)
 ![](https://i.imgur.com/yag7JDu.png)
-the changes should be populated!
+
+The changes should be populated!
+
 ![](https://i.imgur.com/xsLhMLI.png)
