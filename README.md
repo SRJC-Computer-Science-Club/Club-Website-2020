@@ -51,7 +51,7 @@ https://srjc-computer-science-club.github.io/Club-Website-2020/
 ```
 #### Note: 
 ```
-the changes sometimes will not populate emiditly, 
+the changes sometimes will not populate immediately, 
 
 it take time for github to push the changes to the website.
 ```
