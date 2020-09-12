@@ -13,6 +13,10 @@ p {
     color: white;
 }
 
+.header-p {
+    font-size: 13px;
+}
+
 body 
 {
     background: #b9baa3;
